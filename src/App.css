@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+.App {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+button {
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  color: #08c;
+}
+button:hover {
+  color: rgb(0, 0, 0);
+}
+.App {
+  display: flex;
+}
+.app-barralateral {
+  width: 30%;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+}
+.app-barralateral-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+.app-barralateral-header h1 {
+  margin: 0;
+}
+.app-barralateral-notas {
+  height: calc(100vh - 78px);
+  overflow-y: scroll;
+}
+.app-barralateral-nota {
+  padding: 25px;
+  cursor: pointer;
+}
+.barralateral-titulo-nota {
+  display: flex;
+  justify-content: space-between;
+}
+.app-barralateral-nota button {
+  color: crimson;
+}
+.app-barralateral-nota p {
+  margin: 10px 0;
+}
+
+.app-barralateral-nota:hover {
+  background: #ddd;
+}
+.app-barralateral-nota.active,
+.app-barralateral-nota.active small {
+  background: #08c;
+  color: white;
+}
+
+.app-principal {
+  width: 70%;
+  height: 100vh;
+}
+.app-principal-note-edit {
+  height: 50vh;
+  padding: 25px;
+}
+
+.app-principal-note-edit input,
+textarea {
+  display: block;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  width: 100%;
+  height: calc(100vh - 130px);
+  padding: 10px;
+  resize: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+.app-principal-note-edit input {
+  height: 50px;
+  font-size: 2rem;
+}
